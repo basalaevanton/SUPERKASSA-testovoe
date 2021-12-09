@@ -10,12 +10,8 @@ export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
   return (
     <header className={cn(className, styles.header)} {...props}>
       <Typography variant="h1" component="div">
-        Header
+        SuperKassa testovoe
       </Typography>
-      <nav className={styles.nav}>
-        <Link to="/">Home link</Link>
-        <Link to="/second">Second link</Link>
-      </nav>
     </header>
   );
 };

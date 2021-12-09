@@ -1,5 +1,5 @@
-import startStore from "./startStore";
+import PhoneNumbersReducer from "./phonesStore";
 
 export default {
-  startStore,
+  PhoneNumbersReducer,
 };

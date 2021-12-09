@@ -1,5 +1,5 @@
-import { StartActionCreators } from "./startStore/action-creators";
+import * as PhoneNumbersActionCreators from "./phonesStore/action-creators";
 
 export const allActionCreators = {
-  ...StartActionCreators,
+  ...PhoneNumbersActionCreators,
 };

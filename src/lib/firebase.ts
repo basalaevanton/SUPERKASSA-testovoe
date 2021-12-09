@@ -7,7 +7,7 @@ import { API } from "../helpers/api";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: API.KEY,
+  apiKey: "AIzaSyCpnTYGEL0uzN-FAoRiznMTyIWAZ2EufF0",
   authDomain: "superkassa-testovoe.firebaseapp.com",
   projectId: "superkassa-testovoe",
   storageBucket: "superkassa-testovoe.appspot.com",

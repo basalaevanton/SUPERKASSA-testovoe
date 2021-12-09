@@ -6,7 +6,7 @@
 
 ## Стек
 
--React, Typescript, Redux, Firebase
+- React, Typescript, Redux, Firebase
 
 ## Layout
 

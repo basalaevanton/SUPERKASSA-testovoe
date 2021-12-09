@@ -1,9 +1,9 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+rm -r build 
 npm run stylelint
 npm run prettier
 npm run build
-npm run gitadd
-
 npm run deploy
+npm run gitadd
