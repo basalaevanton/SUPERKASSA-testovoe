@@ -3,4 +3,7 @@
 
 npm run stylelint
 npm run prettier
+npm run build
 npm run gitadd
+
+npm run deploy

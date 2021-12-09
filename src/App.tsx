@@ -6,7 +6,6 @@ import Start from "./pages/Start";
 const App = function (): JSX.Element {
   return (
     <>
-      {/* {routing} */}
       <Routes>
         <Route path="/" element={<Start />} />
       </Routes>
