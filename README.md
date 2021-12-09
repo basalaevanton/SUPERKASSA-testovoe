@@ -1,16 +1,12 @@
-# Стартовая сборка React TS.
+# SUPERKASSA testovoe.
 
-- typescript
-- redux, redux thunk, redux devtools
-- react router dom
-- sass
-- material UI
-- classnames
-- normalize.css
-- axios
-- eslint, stylelint, prettier
-- husky
--
+## Тестовое задание
+
+[Тестовое задание](/task.md)
+
+## Стек
+
+-React, Typescript, Redux, Firebase
 
 ## Layout
 
@@ -18,7 +14,6 @@
 
 ## Hooks
 
-- useScrollY
 - useAction & use TypedSelector (for redux)
 
 ## Available Scripts
