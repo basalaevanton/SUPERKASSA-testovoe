@@ -1,13 +1,13 @@
-import { PhoneNumber } from "../../../interfaces/phoneNumber.interface";
+import { IdPhoneNumber } from "../../../interfaces/phoneNumber.interface";
 
 export interface PhonesState {
-  phoneNumbers: PhoneNumber[];
+  phoneNumbers: IdPhoneNumber[];
 
   loading: boolean;
   error: null | string;
 }
 
-export enum PhoneActionTypes {
+export enum GetPhoneActionTypes {
   GET_PHONES = "FETCH_PHONES",
   GET_PHONES_SUCCESS = "FETCH_PHONES_SUCCESS",
   GET_PHONES_ERROR = "FETCH_PHONES_ERROR",
@@ -17,24 +17,24 @@ export enum PhoneActionTypes {
 }
 
 export interface GetPhonesAction {
-  type: PhoneActionTypes.GET_PHONES;
+  type: GetPhoneActionTypes.GET_PHONES;
 }
 
 export interface GetPhonesSuccesAction {
-  type: PhoneActionTypes.GET_PHONES_SUCCESS;
-  payload: PhoneNumber[];
+  type: GetPhoneActionTypes.GET_PHONES_SUCCESS;
+  payload: any;
 }
 export interface GetPhonesErrorAction {
-  type: PhoneActionTypes.GET_PHONES_ERROR;
+  type: GetPhoneActionTypes.GET_PHONES_ERROR;
   payload: string;
 }
 
 export interface DeletePhoneAction {
-  type: PhoneActionTypes.DELETE_PHONE_NUMBER;
-  payload: PhoneNumber[];
+  type: GetPhoneActionTypes.DELETE_PHONE_NUMBER;
+  payload: IdPhoneNumber[];
 }
 export interface DeleteAllPhonesAction {
-  type: PhoneActionTypes.DELETE_ALL_PHONES;
+  type: GetPhoneActionTypes.DELETE_ALL_PHONES;
 }
 
 export type PhonesAction =

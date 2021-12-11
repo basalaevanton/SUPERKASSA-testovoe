@@ -1,20 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { withLayout } from "../layout/Layout";
 
-import { Typography } from "@mui/material";
 import { useTypedSelector, useActions } from "../hooks";
 
-import { db } from "../lib/firebase";
-import { PhoneNumber } from "../interfaces/phoneNumber.interface";
-import { Input } from "../components";
+import { InputMui, PhoneInputLib } from "../components";
 
 const Start = () => {
   const { phoneNumbers, loading, error } = useTypedSelector(
     (state) => state.PhoneNumbersReducer
   );
   const { getPhoneNumbers } = useActions();
-
-  console.log(phoneNumbers);
 
   useEffect(() => {
     getPhoneNumbers();
@@ -28,10 +23,18 @@ const Start = () => {
   }
   return (
     <div>
-      <Input />
-      {phoneNumbers.map((number) => (
-        <div key={number.id}>{number.phoneNumber}</div>
-      ))}
+      <div>{/* <InputMui /> */}</div>
+      <div>
+        <PhoneInputLib />
+      </div>
+
+      {phoneNumbers
+        .sort((a, b) => a.id - b.id)
+        .map((number, index) => (
+          <div key={number.id} style={{ paddingTop: "15px" }}>
+            {index + 1}) {number.country} +{number.phoneNumber}
+          </div>
+        ))}
     </div>
   );
 };

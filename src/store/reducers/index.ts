@@ -1,5 +1,7 @@
-import PhoneNumbersReducer from "./phonesStore";
+import PhoneNumbersReducer from "./getPhonesStore";
+import PostPhoneNumbersReducer from "./postPhonesStore";
 
 export default {
   PhoneNumbersReducer,
+  PostPhoneNumbersReducer,
 };

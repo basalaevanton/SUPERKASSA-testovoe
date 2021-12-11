@@ -1,0 +1,20 @@
+.button {
+  display: inline-flex;
+
+  box-sizing: border-box;
+  height: fit-content;
+  padding: 10px 19px;
+
+  cursor: pointer;
+  transition: all 0.5s;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: black;
+  border: 2px solid;
+  border-radius: 22px;
+
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+}
