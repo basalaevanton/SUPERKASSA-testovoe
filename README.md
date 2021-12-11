@@ -1,5 +1,7 @@
 # SUPERKASSA testovoe.
 
+[Ссылка на приложение](https://superkassa-testovoe.web.app/)
+
 ## Тестовое задание
 
 [Тестовое задание](/task.md)
